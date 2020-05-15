@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <script src="index.js" defer></script>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body >
+    <p id="date"></p>
+    <div id="clock">
+    <p class="unit" id="hours"></p>
+    <p class="unit" id="minutes"></p>
+    <p class="unit" id="seconds"></p>
+    <p class="unit" id="ampm"></p>
+    </div>
+    <div>
+        <p id="personalization"><i>By Monika Mohanraj</i></p>
+    </div>
+    <div>
+    <select id="zone" onchange="clockfunction()">
+        <option value="select">--Choose--</option>
+        <option value="Asia/Kolkata" id="india">India</option>
+        <option value="America/New_York" id="america">America</option>
+        <option value="Asia/Shanghai" id="asia">Asia</option>
+        <option value="Australia/Brisbane" id="Australia">Australia</option>
+    </select>
+</div>
+<div>
+    <button id="12hr" class="button1" onclick="clockfunction(12)">12 hour Format</button>
+    <button id="24hr" class="button2" onclick="clockfunction(24)">24 hour Format</button>
+</div>
+</body>
+</html>
